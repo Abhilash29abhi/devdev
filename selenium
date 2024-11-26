@@ -247,3 +247,11 @@ if __name__ == '__main__':
 </html>
 
 
+docker:
+//3cfa6d489e184579af8a8438a2ffe237
+FROM python
+WORKDIR/app
+COPY ./app
+CMD("python","app.py")
+docker build -t demo
+docker run -p 5000:5000 demo
